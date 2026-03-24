@@ -22,6 +22,14 @@ Le abilitamos en puerto 22 y el puerto 8080 a cada una ya que son los que vamos 
 ![alt text](CapturasPantalla/clonado.png)
 ## Instalamos maven 
 ![alt text](CapturasPantalla/mvn.png)
+## Verificamo que en math-service podamos prender el servidos la cual esta por el puerto 8080
+Realizamos un mvn clean package
+![alt text](CapturasPantalla/erroresmaven.png)
+![alt text](CapturasPantalla/puertoproxy.png)
+Ejecutamos el servidos con spring con .\mvnw.cmd spring-boot:run pero no funciona porerrores anteriores
+![alt text](CapturasPantalla/errorspring.png)
+
 ## Verificamo que en proxy podamos prender el servidos la cual esta por el puesto 8080
 ![alt text](CapturasPantalla/puertoproxy.png)
 ![alt text](CapturasPantalla/springproxy.png)
+Para correr este servidor proxy en visual debemos estar dentro del archivo proxy-service y ejecutar  .\mvnw.cmd spring-boot:run y asi nos quedara activo el servicio
